@@ -3,7 +3,7 @@
 include '../langs/lang.php';
 
 /* SCRIPT XML STEAM */
-$url = "https://steamcommunity.com/groups/".$gruposteam."/memberslistxml/?xml=1";
+$url = "https://steamcommunity.com/groups/COMMUNITY GROUP NAME HERE"."/memberslistxml/?xml=1";
 $xml = simplexml_load_file($url);
 $avatarfull = $xml->groupDetails->avatarFull;
 $groupname = $xml->groupDetails->groupName;
