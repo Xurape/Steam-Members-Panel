@@ -21,7 +21,8 @@ Este painel contém 2 linguagens, português e inglês.
 - VIP Manager Page
 - Account Manager Page (SOON)
 - Admin Page (SOON)
-- Buy VIP & Auto activation (SOON)
+- Buy VIP w/ Auto Activation (SOON)
+- Gift VIP w/ Auto Activation (SOON)
 - Discord Integration (SOON)
 - MySQL Support
 - DeckPanel Support
