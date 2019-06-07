@@ -19,13 +19,14 @@ Este painel contém 2 linguagens, português e inglês.
 - Login System 
 - Language System
 - VIP Manager Page
+- Staff Applications (WORKING ON IT)
 - Account Manager Page (SOON)
 - Admin Page (SOON)
 - Buy VIP w/ Auto Activation (SOON)
 - Gift VIP w/ Auto Activation (SOON)
 - Discord Integration (SOON)
 - MySQL Support
-- DeckPanel Support
+- [DeckPanel](https://deckhost.pt/cart.php?a=confproduct&i=0) Support
 
 # Some Screenshots of the panel
 ## Login Page
