@@ -26,7 +26,7 @@ Este painel contém 2 linguagens, português e inglês.
 - Gift VIP w/ Auto Activation (SOON)
 - Discord Integration (SOON)
 - MySQL Support
-- DeckPanel Support
+- [DeckPanel](https://deckhost.pt/cart.php?a=confproduct&i=0) Support
 
 # Some Screenshots of the panel
 ## Login Page
