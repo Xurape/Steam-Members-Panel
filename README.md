@@ -15,6 +15,33 @@ Este painel contém 2 linguagens, português e inglês.
 - [MySQL](https://www.mysql.com/)
 - [phpMyAdmin](https://www.phpmyadmin.net/) (To manage the database & upload the .SQL)
 
+# Functions
+- Login System 
+- Language System
+- VIP Manager Page
+- Account Manager Page (SOON)
+- Admin Page (SOON)
+- Buy VIP & Auto activation (SOON)
+- Discord Integration (SOON)
+- MySQL Support
+- DeckPanel Support
+
+# Some Screenshots of the panel
+- Login Page
+![image](https://user-images.githubusercontent.com/41197101/59125477-610fd400-895a-11e9-92ea-490b2511ad28.png)
+
+- Index Page 
+![image](https://user-images.githubusercontent.com/41197101/59125513-75ec6780-895a-11e9-8810-da396d4d16eb.png)
+
+- Index (VIP Tabs)
+![image](https://user-images.githubusercontent.com/41197101/59125548-8dc3eb80-895a-11e9-8def-083d10237908.png)
+
+- Index (Accounts Tabs)
+![image](https://user-images.githubusercontent.com/41197101/59125579-a7653300-895a-11e9-9733-0ce4b50c40c5.png)
+
+- Language System
+![image](https://user-images.githubusercontent.com/41197101/59125603-b6e47c00-895a-11e9-9c1e-f67847fd1a0e.png)
+
 # Configuration Examples
 SteamConfig.php
 ```php
@@ -60,22 +87,6 @@ $logodacomunidade = 'http://tugaarmy.pt/assets/images/logo.png'; /* COLOCA AQUI 
 $comunidade = $groupname;
 ?>
 ```
-
-# Some Screenshots of the panel
-- Login Page
-![image](https://user-images.githubusercontent.com/41197101/59125477-610fd400-895a-11e9-92ea-490b2511ad28.png)
-
-- Index Page 
-![image](https://user-images.githubusercontent.com/41197101/59125513-75ec6780-895a-11e9-8810-da396d4d16eb.png)
-
-- Index (VIP Tabs)
-![image](https://user-images.githubusercontent.com/41197101/59125548-8dc3eb80-895a-11e9-8def-083d10237908.png)
-
-- Index (Accounts Tabs)
-![image](https://user-images.githubusercontent.com/41197101/59125579-a7653300-895a-11e9-9733-0ce4b50c40c5.png)
-
-- Language System
-![image](https://user-images.githubusercontent.com/41197101/59125603-b6e47c00-895a-11e9-9c1e-f67847fd1a0e.png)
 
 # Other things related to the plugin
 - [Demo website](https://tugaarmy.pt/membros/)
