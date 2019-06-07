@@ -116,8 +116,7 @@
                         		</div>
                             </div>
                         </div>
-                    </div>
-                </div>
+           <center><p>Members panel made by <a href="https://steamcommunity.com/id/ShutAP1337">ShutAP</a></p></center>
         </div>
         <script>
             var resizefunc = [];
