@@ -13,7 +13,7 @@ require 'langs/lang.php';
         <meta name="description" content="Painel desenvolvido para poderes interagir com os nossos servidores!">
         <meta name="author" content="ShutAP">
         <link rel="shortcut icon" href="<? echo $logodacomunidade ?>">
-        <title><? echo $comunidade ?> - My VIP</title>
+        <title><? echo $comunidade ?> - <? echo CONTENT_CANDIDATURAS ?></title>
 		    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
@@ -40,7 +40,7 @@ require 'langs/lang.php';
       } else {
         include ('includes/steamauth/userInfo.php');
 
-        include 'includes/myvip.php';
+        include 'includes/candidaturas.php';
       }
       ?>
     </body>

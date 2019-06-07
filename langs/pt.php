@@ -23,6 +23,7 @@ define('CONTENT_COMPRASS', 'Status');
 define('CONTENT_COMPRAST', 'Cargo');
 define('CONTENT_COMPRADO', 'Pago');
 define('CONTENT_EXPIRADO', 'Expirado');
+define('CONTENT_CANDIDATURAS', 'Candidaturas Staff');
 define('CONTENT_SOON', 'BREVE');
 
 /*
