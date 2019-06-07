@@ -162,7 +162,6 @@
                                                     <td>-- / -- / ----</td>
                                                     <td><span class="label label-danger"><?php echo CONTENT_EXPIRADO; ?></span></td>
                                                     <td>VIP</td>
-                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -171,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-        
+            <center><p>Members panel made by <a href="https://steamcommunity.com/id/ShutAP1337">ShutAP</a></p></center>
         <script>
             var resizefunc = [];
         </script>
