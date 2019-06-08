@@ -15,7 +15,7 @@ function setLanguage()
     }
     else
     {
-        require_once($linguagempredefinida);
+        require_once('langs/pt.php');
     }
 }
 
