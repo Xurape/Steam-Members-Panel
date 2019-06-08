@@ -10,6 +10,8 @@ Este painel ajuda a tua comunidade de CSGO ou outro tipo de comunidade com uma v
 
 Este painel contém 2 linguagens, português e inglês.
 
+Check all changelogs [here](https://github.com/ShutAP1337/Steam-Members-Panel/blob/master/CHANGELOG.md)
+
 # Requirements:
 - [PHP](https://php.net/) (Version 5.6.0 or newer)
 - [MySQL](https://www.mysql.com/)
