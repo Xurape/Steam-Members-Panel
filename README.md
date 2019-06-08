@@ -10,6 +10,8 @@ Este painel ajuda a tua comunidade de CSGO ou outro tipo de comunidade com uma v
 
 Este painel contém 2 linguagens, português e inglês.
 
+Check all changelogs [here](https://github.com/ShutAP1337/Steam-Members-Panel/blob/master/CHANGELOG.md)
+
 # Requirements:
 - [PHP](https://php.net/) (Version 5.6.0 or newer)
 - [MySQL](https://www.mysql.com/)
@@ -19,7 +21,8 @@ Este painel contém 2 linguagens, português e inglês.
 - Login System 
 - Language System
 - VIP Manager Page
-- Staff Applications (WORKING ON IT)
+- Staff List Page
+- Staff Applications
 - Account Manager Page (SOON)
 - Admin Page (SOON)
 - Buy VIP w/ Auto Activation (SOON)
