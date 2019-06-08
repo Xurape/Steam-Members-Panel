@@ -12,7 +12,7 @@
                                 </button>
                             </li>
                             <li>
-                                <h4 class="page-title"><?php echo CONTENT_INICIO; ?>  /  My VIP  /  </h4>
+                                <h4 class="page-title"><?php echo CONTENT_INICIO; ?>  /  <? echo CONTENT_CANDIDATURAS ?>  /  </h4>
                             </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
@@ -69,17 +69,26 @@
                             </li>
 
                             <li>
-                                <a href="https://tugaarmy.pt/bans/index.php?p=servers" class="waves-effect"><i class="zmdi zmdi-dns"></i> <span> <?php echo CONTENT_SERVIDORES; ?> </span> </a>
+                                <a href="<? echo $websitedebans."?p=servers"; ?>" class="waves-effect"><i class="zmdi zmdi-dns"></i> <span> <?php echo CONTENT_SERVIDORES; ?> </span> </a>
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect active"><i class="fas fa-award"></i> <span> VIP </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-award"></i> <span> VIP </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href=""><?php echo CONTENT_COMPRARVIP; ?>    <span class="label label-danger"><?php echo CONTENT_SOON; ?></span></a></li>
                                     <li><a href=""><?php echo CONTENT_OFERECERVIP; ?>    <span class="label label-danger"><?php echo CONTENT_SOON; ?></span></a></li>
                                     <li><a href="myvip.php">My VIP    </a></li>
                                 </ul>
                             </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect active"><i class="fas fa-cogs"></i> <span> Staff </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="staff.php"><?php echo CONTENT_STAFFINFO; ?></a></li>
+                                    <li><a href="candidaturas.php"><?php echo CONTENT_CANDIDATURAS; ?></a></li>
+                                    <li><a href=""><? echo CONTENT_PAINELADMIN; ?>   <span class="label label-danger"><?php echo CONTENT_SOON; ?></span></a></li>
+                                </ul>
+                            </li>                                    
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-user"></i> <span> <?php echo CONTENT_CONTA; ?> </span> <span class="menu-arrow"></span></a>
@@ -91,7 +100,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="https://discord.gg/mMhtxnr" class="waves-effect"><i class="fab fa-discord"></i> <span> Discord </span></a>
+                                <a href="<? echo $discord ?>" class="waves-effect"><i class="fab fa-discord"></i> <span> Discord </span></a>
                             </li>                            
 
                         </ul>
@@ -107,7 +116,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="card-box">
-                        			<h4 class="header-title m-t-0 m-b-30"><?php echo CONTENT_COMPRAS; ?></h4>
+                        			<h4 class="header-title m-t-0 m-b-30"><?php echo CONTENT_CANDIDATURAS; ?></h4>
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead>
@@ -115,34 +124,105 @@
                                                 <th><?php echo CONTENT_COMPRASNR; ?></th>
                                                 <th><?php echo CONTENT_COMPRASNM; ?></th>
                                                 <th><?php echo CONTENT_COMPRASD; ?></th>
-                                                <th><?php echo CONTENT_COMPRASDD; ?></th>
                                                 <th><?php echo CONTENT_COMPRASS; ?></th>
                                                 <th><?php echo CONTENT_COMPRAST; ?></th>
                                             </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>VIP</td>
-                                                    <td><? echo '<time datetime="'.date('c').'">'.date('d / m / Y').'</time>'; ?></td>
-                                                    <td>-- / -- / ----</td>
-                                                    <td><span class="label label-success"><?php echo CONTENT_COMPRADO; ?></span></td>
-                                                    <td>VIP</td>
-                                                </tr>
-                                                <tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>VIP</td>
-                                                    <td>-- / -- / ----</td>
-                                                    <td>-- / -- / ----</td>
-                                                    <td><span class="label label-danger"><?php echo CONTENT_EXPIRADO; ?></span></td>
-                                                    <td>VIP</td>
+                                            <tbody>                                        
+                                            <?php
+                                                $con=mysqli_connect($db_host,$db_username,$db_password,$db_name);
+                                                if (mysqli_connect_errno())
+                                                {
+                                                    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                                                }
+
+                                                $result = mysqli_query($con,"SELECT * FROM candidaturas");
+
+                                                while($row = mysqli_fetch_array($result))
+                                                {
+                                                    echo "<tr>";
+                                                    echo "<td>" . $row['number'] . "</td>";
+                                                    echo "<td>" . $row['nickname'] . "</td>";
+                                                    echo "<td>" . $row['data'] . "</td>";
+                                                    if($row['status'] == 'Aprovado') {
+                                                        echo "<td><span class='label label-success'>" . $row['status'] . "</span></td>";
+                                                    } elseif($row['status'] == 'Recusado') {
+                                                        echo "<td><span class='label label-danger'>" . $row['status'] . "</span></td>";
+                                                    } elseif($row['status'] == 'Em revisão') {
+                                                    echo "<td><span class='label label-warning'>" . $row['status'] . "</span></td>";
+                                                    }                                                    
+                                                    echo "<td>" . $row['cargo'] . "</td>";
+                                                    echo "</tr>";                                                    
+                                                }
+
+                                                mysqli_close($con);
+                                            ?>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <?php
+                            $con = mysqli_connect($db_host, $db_username, $db_password, $db_name);
+                            mysqli_select_db($con, $db_name);
+                            $name = $_POST['name'];
+                            $steamlink = $_POST['steamlink'];
+                            $email = $_POST['email'];
+                            $cargo = $_POST['cargo'];
+                            $knowledge = $_POST['knowledge'];
+                            
+                            $s = " select * from candidaturas where steamlink = '$steamlink'";
+
+                            $result = mysqli_query($con, $s);
+
+                            $num = mysqli_num_rows($result);
+                        ?>
+                        <div class="wrapper">
+		                	<div class="inner">
+			                	<form action="candidaturas.php" method="post">
+			            		<h3><? echo CONTENT_CANDIDATURAS; ?></h3>
+			            		<p><? echo CONTENT_CANDIDATURASTEXTO; ?></p>
+			            		<label class="form-group">
+			            			<input type="text" name="name" class="form-control"  required>
+			            			<span><? echo CONTENT_YOURNAME; ?></span>
+			            			<span class="border"></span>
+			            		</label>
+				            	<label class="form-group">
+				            		<input type="text" name="steamlink" class="form-control"  required>
+				            		<span for=""><? echo CONTENT_YOURSTEAM; ?></span>
+				            		<span class="border"></span>
+                                </label>
+				            	<label class="form-group">
+				            		<input type="text" name="email" class="form-control"  required>
+				            		<span for=""><? echo CONTENT_YOUREMAIL; ?></span>
+				            		<span class="border"></span>
+                                </label>     
+				            	<label class="form-group" >
+				            		<input type="text" name="cargo" class="form-control" required></textarea>
+				            		<span for=""><? echo CONTENT_CARGO; ?></span>
+				            		<span class="border"></span>
+				            	</label>                                                           
+				            	<label class="form-group" >
+				            		<textarea name="conhecimento" id="" class="form-control" required></textarea>
+				            		<span for=""><? echo CONTENT_KNOWLEGDGE; ?></span>
+				            		<span class="border"></span>
+				            	</label>
+				            	<button><? echo CONTENT_ENVIAR ?> 
+						            <i class="zmdi zmdi-arrow-right"></i>
+                                </button>
+                                <?php
+                               if($num == 1){
+
+                              }else{
+                                  $reg= " insert into candidaturas(number, nickname, data, status, cargo, name, steamlink, email, knowledge) values ('X', '$nickname', CURRENT_TIMESTAMP, 'Em revisão', '$cargo', '$name', '$steamlink', '$email', '$knowledge')";
+                                  mysqli_query($con, $reg);
+                              }
+                              ?>
+				                </form>
+			</div>
+		</div>
+                        
                     </div>
                 </div>
             <center><p>Members panel made by <a href="https://steamcommunity.com/id/ShutAP1337">ShutAP</a></p></center>

@@ -69,7 +69,7 @@
                             </li>
 
                             <li>
-                                <a href="https://tugaarmy.pt/bans/index.php?p=servers" class="waves-effect"><i class="zmdi zmdi-dns"></i> <span> <?php echo CONTENT_SERVIDORES; ?> </span> </a>
+                                <a href="<? echo $websitedebans."?p=servers"; ?>" class="waves-effect"><i class="zmdi zmdi-dns"></i> <span> <?php echo CONTENT_SERVIDORES; ?> </span> </a>
                             </li>
 
                             <li class="has_sub">
@@ -82,6 +82,15 @@
                             </li>
 
                             <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-cogs"></i> <span> Staff </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="staff.php"><?php echo CONTENT_STAFFINFO; ?></a></li>
+                                    <li><a href="candidaturas.php"><?php echo CONTENT_CANDIDATURAS; ?></a></li>
+                                    <li><a href=""><? echo CONTENT_PAINELADMIN; ?>   <span class="label label-danger"><?php echo CONTENT_SOON; ?></span></a></li>
+                                </ul>
+                            </li>                            
+
+                            <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-user"></i> <span> <?php echo CONTENT_CONTA; ?> </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href=""><?php echo CONTENT_AMINHACONTA; ?>    <span class="label label-danger"><?php echo CONTENT_SOON; ?></span></a></li>
@@ -91,7 +100,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="https://discord.gg/mMhtxnr" class="waves-effect"><i class="fab fa-discord"></i> <span> Discord </span></a>
+                                <a href="<? echo $discord ?>" class="waves-effect"><i class="fab fa-discord"></i> <span> Discord </span></a>
                             </li>                            
 
                         </ul>

@@ -12,7 +12,7 @@
                                 </button>
                             </li>
                             <li>
-                                <h4 class="page-title"><?php echo CONTENT_INICIO; ?>  /  My VIP  /  </h4>
+                                <h4 class="page-title"><?php echo CONTENT_INICIO; ?>  /  Staff  /  </h4>
                             </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
@@ -73,7 +73,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect active"><i class="fas fa-award"></i> <span> VIP </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-award"></i> <span> VIP </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href=""><?php echo CONTENT_COMPRARVIP; ?>    <span class="label label-danger"><?php echo CONTENT_SOON; ?></span></a></li>
                                     <li><a href=""><?php echo CONTENT_OFERECERVIP; ?>    <span class="label label-danger"><?php echo CONTENT_SOON; ?></span></a></li>
@@ -82,7 +82,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-cogs"></i> <span> Staff </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect active"><i class="fas fa-cogs"></i> <span> Staff </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="staff.php"><?php echo CONTENT_STAFFINFO; ?></a></li>
                                     <li><a href="candidaturas.php"><?php echo CONTENT_CANDIDATURAS; ?></a></li>
@@ -100,7 +100,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="<?php echo $discord; ?>" class="waves-effect"><i class="fab fa-discord"></i> <span> Discord </span></a>
+                                <a href="<? echo $discord ?>" class="waves-effect"><i class="fab fa-discord"></i> <span> Discord </span></a>
                             </li>                            
 
                         </ul>
@@ -114,69 +114,137 @@
                 <div class="content">
                     <div class="container">
                         <div class="row">
-                        <center><div class="row">
+                        <center>
+                        <div class="row">
                             <div class="col-lg-3 col-md-6">
                                 <div class="card-box widget-user">
                                     <div>
                                         <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
                                         <div class="wid-u-info">
-                                            <h4 class="m-t-0 m-b-5 font-600">ShutAP</h4>
-                                            <a href="https://steamcommunity.com/id/ShutAP1337"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #1</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
                                             <small class="text-danger"><b><?php echo CONTENT_DEVELOPER; ?></b></small>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
                             <div class="col-lg-3 col-md-6">
                                 <div class="card-box widget-user">
                                     <div>
                                         <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
                                         <div class="wid-u-info">
-                                            <h4 class="m-t-0 m-b-5 font-600"><? echo $steamprofile['personaname'] ?></h4>
-                                            <a href="<? echo $steamprofile['profileurl'] ?>"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
-                                            <small class="text-success"><b><?php echo CONTENT_MEMBER; ?></b></small>
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #2</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <small class="text-danger"><b><?php echo CONTENT_FUNDADOR; ?></b></small>
                                         </div>
                                     </div>
                                 </div>
-                            </div>          </center>                  
-                            <div class="col-lg-12">
-                                <div class="card-box">
-                        			<h4 class="header-title m-t-0 m-b-30"><?php echo CONTENT_COMPRAS; ?></h4>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                            <tr>
-                                                <th><?php echo CONTENT_COMPRASNR; ?></th>
-                                                <th><?php echo CONTENT_COMPRASNM; ?></th>
-                                                <th><?php echo CONTENT_COMPRASD; ?></th>
-                                                <th><?php echo CONTENT_COMPRASDD; ?></th>
-                                                <th><?php echo CONTENT_COMPRASS; ?></th>
-                                                <th><?php echo CONTENT_COMPRAST; ?></th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>VIP</td>
-                                                    <td><? echo '<time datetime="'.date('c').'">'.date('d / m / Y').'</time>'; ?></td>
-                                                    <td>-- / -- / ----</td>
-                                                    <td><span class="label label-success"><?php echo CONTENT_COMPRADO; ?></span></td>
-                                                    <td>VIP</td>
-                                                </tr>
-                                                <tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>VIP</td>
-                                                    <td>-- / -- / ----</td>
-                                                    <td>-- / -- / ----</td>
-                                                    <td><span class="label label-danger"><?php echo CONTENT_EXPIRADO; ?></span></td>
-                                                    <td>VIP</td>
-                                            </tbody>
-                                        </table>
+                            </div>       
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-user">
+                                    <div>
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
+                                        <div class="wid-u-info">
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #3</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <small class="text-danger"><b><?php echo CONTENT_COFUNDADOR; ?></b></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>       
+                            <br>
+                            <br>                                                                                                                    
+                        </center>
+                        </div>
+                        <div class="row">
+                        <center>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-user">
+                                    <div>
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
+                                        <div class="wid-u-info">
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #4</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <small class="text-danger"><b><?php echo CONTENT_HEADADMIN; ?></b></small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-user">
+                                    <div>
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
+                                        <div class="wid-u-info">
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #5</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <small class="text-warning"><b><?php echo CONTENT_ADMINISTRADOR; ?></b></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>       
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-user">
+                                    <div>
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
+                                        <div class="wid-u-info">
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #6</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <small class="text-warning"><b><?php echo CONTENT_MODERADOR; ?></b></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>       
+                            <br>
+                            <br>                                                                                                                    
+                        </center>
+                        </div>              
+                        <div class="row">
+                        <center>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-user">
+                                    <div>
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
+                                        <div class="wid-u-info">
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #7</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <small class="text-primary"><b><?php echo CONTENT_HELPER; ?></b></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-user">
+                                    <div>
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
+                                        <div class="wid-u-info">
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #8</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <small class="text-success"><b>VIP</b></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>       
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-box widget-user">
+                                    <div>
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/9173fe99a0270b2a3d76b5df5f256ba7a8924cc5_medium.jpg" class="img-responsive img-circle" alt="user">
+                                        <div class="wid-u-info">
+                                            <h4 class="m-t-0 m-b-5 font-600">STAFF NAME #9</h4>
+                                            <a href="https://steamcommunity.com/id/STAFF ID"><p class="text-muted m-b-5 font-13">Steam <i class="fas fa-external-link-alt"></i></p><a>
+                                            <small class="text-sucessfull"><b><?php echo CONTENT_MEMBER; ?></b></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>       
+                            <br>
+                            <br>                                                                                                                    
+                        </center>
+                        </div>                                           
                     </div>
                 </div>
             <center><p>Members panel made by <a href="https://steamcommunity.com/id/ShutAP1337">ShutAP</a></p></center>
