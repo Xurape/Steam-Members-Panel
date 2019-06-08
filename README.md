@@ -19,7 +19,8 @@ Este painel contém 2 linguagens, português e inglês.
 - Login System 
 - Language System
 - VIP Manager Page
-- Staff Applications (WORKING ON IT)
+- Staff List Page
+- Staff Applications
 - Account Manager Page (SOON)
 - Admin Page (SOON)
 - Buy VIP w/ Auto Activation (SOON)
