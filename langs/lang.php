@@ -4,20 +4,20 @@ include '../includes/config.php';
 
 function setLanguage()
 {
-	if(isset($_GET['l']))
+    if(isset($_GET['l']))
     {
-        if($linguagempredefinida == PT)
+        if($_GET['l'] == 'pt')
         {
             require_once('langs/pt.php');
         }
-        elseif($linguagempredefinida == EN)
+        elseif($_GET['l'] == 'en')
         {
             require_once('langs/en.php');
         }
-        else
-        {
-            require_once('langs/en.php');
-        }
+    }
+    else
+    {
+        require_once('langs/pt.php'); 
     }
 }
 
