@@ -1,25 +1,27 @@
 <?php
 
-include '../langs/lang.php';
+include 'membros.php';
 
-/* SCRIPT XML STEAM */
-$groupurl = "https://steamcommunity.com/groups/COMMUNITY NAME HERE";
-
-/* CONFIGURAÇÕES BÁSICAS DO PAINEL */
+/* DATABASE */
 $db_host = 'localhost';
 $db_username = 'root';
 $db_password = '';
 $db_name = '';
 
-$gruposteam = ''; /* COLOCA AQUI O LINK DO GRUPO DA STEAM */
-$logodacomunidade = ''; /* COLOCA AQUI O LINK DO LOGÓTIPO DA TUA COMUNIDADE (PNG) */
-$websitedebans = ''; /* COLOCA AQUI O LINK DO WEBSITE DE BANIMENTOS */
-$discord = ''; /* LINK DO SERVIDOR DE DISCORD */
+/* STEAM  */
 $apikeysteam = ''; /* API KEY, QUE PODE SER PEGADA AQUI: https://steamcommunity.com/dev/apikey */
 $linkdowebsite = ''; /* LINK DO WEBSITE ONDE ESTÁ INSTALADO O PAINEL */
 
+/* COMUNIDADE */
+$logodacomunidade = ''; /* COLOCA AQUI O LINK DO LOGÓTIPO DA TUA COMUNIDADE (PNG) */
+$websitedebans = ''; /* COLOCA AQUI O LINK DO WEBSITE DE BANIMENTOS */
+$discord = 'https://discord.gg/'; /* LINK DO SERVIDOR DE DISCORD */
+$gruposteam = 'https://steamcommunity.com/groups/'; /* COLOCA AQUI O LINK DO GRUPO DA STEAM */
+$membros = $member; /* NÃO MEXER */
+$comunidade = $groupname; /* NÃO MEXER */
+
 /* CONFIGURAÇÕES EXTRA */
-$licença = '';
+$licença = 'Sem Licença'; /* NÃO MEXER */
 $linguagempredefinida = 'PT'; /* OPÇÕES: EN ou PT (Default: PT)
 
 ?>
