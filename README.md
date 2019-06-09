@@ -18,7 +18,8 @@ Check all changelogs [here](https://github.com/ShutAP1337/Steam-Members-Panel/bl
 - [phpMyAdmin](https://www.phpmyadmin.net/) (To manage the database & upload the .SQL)
 
 # Functions
-- Login System 
+- Normal Login System
+- Steam Login System
 - Language System
 - VIP Manager Page
 - Staff List Page
