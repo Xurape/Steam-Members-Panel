@@ -1,8 +1,3 @@
-<?php
-
-include 'config.php';
-
-?>
 <div class="account-pages"></div>
         <div class="clearfix"></div>
         <div class="wrapper-page">
