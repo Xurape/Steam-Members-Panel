@@ -82,4 +82,4 @@ $linguagempredefinida = 'PT'; /* OPÇÕES: EN ou PT (Default: PT)
 - [Demo website](https://tugaarmy.pt/membros/)
 - [My Steam](https://steamcommunity.com/id/ShutAP1337)
 - My discord: ShutUP#4249
-- Shoutout to DikaN for helping with the code! <3
+- Shoutout to DikaN for helping with the code beauty! <3
