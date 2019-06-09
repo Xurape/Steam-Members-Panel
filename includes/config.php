@@ -20,6 +20,6 @@ $linkdowebsite = ''; /* LINK DO WEBSITE ONDE ESTÁ INSTALADO O PAINEL */
 
 /* CONFIGURAÇÕES EXTRA */
 $licença = '';
-$linguagempredefinida = 'langs/pt.php'; /* OPÇÕES: en.php ou pt.php (Default: pt.php)
+$linguagempredefinida = 'PT'; /* OPÇÕES: EN ou PT (Default: PT)
 
 ?>
