@@ -26,6 +26,10 @@ function setLanguage()
         {
             require_once('langs/ru.php');
         }
+        else
+        {
+            require_once('langs/pt.php');
+        }
     }
     elseif($linguagempredefinida)
     {
@@ -49,10 +53,10 @@ function setLanguage()
         {
             require_once('langs/ru.php');
         }
-    }
-    else
-    {
-        require_once('langs/pt.php'); // DEFAULT
+        else
+        {
+            require_once('langs/pt.php');
+        }
     }
 }
 
