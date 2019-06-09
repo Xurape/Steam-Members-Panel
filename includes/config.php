@@ -1,6 +1,6 @@
 <?php
 
-include 'membros.php';
+include 'members.php';
 
 /* DATABASE */
 $db_host = 'localhost';
@@ -22,6 +22,6 @@ $comunidade = $groupname; /* NÃO MEXER */
 
 /* CONFIGURAÇÕES EXTRA */
 $licença = 'Sem Licença'; /* NÃO MEXER */
-$linguagempredefinida = 'PT'; /* OPÇÕES: EN ou PT (Default: PT)
+$linguagempredefinida = 'PT'; /* OPTIONS: PT (Portuguese), EN (English), ES (Spanish), FR (French) and RU (Russian). (Default: PT) */
 
 ?>
