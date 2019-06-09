@@ -2,7 +2,7 @@
 
 include 'config.php';
 
-$url = $groupurl."/memberslistxml/?xml=1";
+$url = $gruposteam."/memberslistxml/?xml=1";
 $xml = simplexml_load_file($url);
 $avatarfull = $xml->groupDetails->avatarFull;
 $groupname = $xml->groupDetails->groupName;
