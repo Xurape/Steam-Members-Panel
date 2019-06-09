@@ -1,7 +1,7 @@
 <?php
 include '../config.php';
 
-$steamauth['apikey'] = ''; /* API KEY, QUE PODE SER PEGADA AQUI: https://steamcommunity.com/dev/apikey */
+$steamauth['apikey'] = $apikey; /* API KEY, QUE PODE SER PEGADA AQUI: https://steamcommunity.com/dev/apikey */
 $steamauth['domainname'] = $linkdowebsite; // The main URL of your website displayed in the login page
 $steamauth['logoutpage'] = $linkdowebsite; // Page to redirect to after a successfull logout (from the directory the SteamAuth-folder is located in) - NO slash at the beginning!
 $steamauth['loginpage'] = $linkdowebsite; // Page to redirect to after a successfull login (from the directory the SteamAuth-folder is located in) - NO slash at the beginning!
