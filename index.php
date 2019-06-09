@@ -14,7 +14,7 @@ require 'langs/lang.php';
         <meta name="author" content="ShutAP">
         <link rel="shortcut icon" href="<? echo $logodacomunidade ?>">
         <title><? echo $comunidade ?></title>
-		    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+	<link rel="stylesheet" href="assets/plugins/morris/morris.css">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
