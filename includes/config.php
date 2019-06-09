@@ -3,14 +3,7 @@
 include '../langs/lang.php';
 
 /* SCRIPT XML STEAM */
-$url = "https://steamcommunity.com/groups/COMMUNITY NAME HERE"."/memberslistxml/?xml=1";
-$xml = simplexml_load_file($url);
-$avatarfull = $xml->groupDetails->avatarFull;
-$groupname = $xml->groupDetails->groupName;
-$member = $xml->groupDetails->memberCount;
-$groupurl = $xml->groupDetails->groupURL;
-$membros = $member;
-$comunidade = $groupname;
+$groupurl = "https://steamcommunity.com/groups/COMMUNITY NAME HERE";
 
 /* CONFIGURAÇÕES BÁSICAS DO PAINEL */
 $db_host = 'localhost';
