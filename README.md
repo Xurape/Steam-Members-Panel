@@ -18,7 +18,8 @@ Check all changelogs [here](https://github.com/ShutAP1337/Steam-Members-Panel/bl
 - [phpMyAdmin](https://www.phpmyadmin.net/) (To manage the database & upload the .SQL)
 
 # Functions
-- Login System 
+- Normal Login System
+- Steam Login System
 - Language System
 - VIP Manager Page
 - Staff List Page
@@ -51,48 +52,34 @@ Check all changelogs [here](https://github.com/ShutAP1337/Steam-Members-Panel/bl
 ![image](https://user-images.githubusercontent.com/41197101/59125603-b6e47c00-895a-11e9-9c1e-f67847fd1a0e.png)
 
 # Configuration Examples
-SteamConfig.php
-```php
-<?php
-$steamauth['apikey'] = "Chave que pode ser pegada aqui: https://steamcommunity.com/dev/apikey"; 
-$steamauth['domainname'] = "dominio.com/membros"; 
-$steamauth['logoutpage'] = "dominio.com/membros"; 
-$steamauth['loginpage'] = "dominio.com/membros"; 
-
-if (empty($steamauth['apikey'])) {die("<div style='display: block; width: 100%; background-color: red; text-align: center;'>SteamAuth:<br>Please supply an API-Key!<br>Find this in steamauth/SteamConfig.php, Find the '<b>\$steamauth['apikey']</b>' Array. </div>");}
-if (empty($steamauth['domainname'])) {$steamauth['domainname'] = $_SERVER['SERVER_NAME'];}
-if (empty($steamauth['logoutpage'])) {$steamauth['logoutpage'] = $_SERVER['PHP_SELF'];}
-if (empty($steamauth['loginpage'])) {$steamauth['loginpage'] = $_SERVER['PHP_SELF'];}
-?>
-```
-
-Config.php
+config.php
 ```php
 <?php
 
-include '../langs/lang.php'; /* LOCALIZAÇÃO DAS TRADUÇÕES (PT & EN) */
+include 'members.php';
 
-/* SCRIPT XML STEAM */
-$url = "https://steamcommunity.com/groups/".$gruposteam."/memberslistxml/?xml=1";
-$xml = simplexml_load_file($url);
-$avatarfull = $xml->groupDetails->avatarFull;
-$groupname = $xml->groupDetails->groupName;
-$member = $xml->groupDetails->memberCount;
-$groupurl = $xml->groupDetails->groupURL;
-
-
-/* CONFIGURAÇÕES BÁSICAS DO PAINEL */
+/* DATABASE */
 $db_host = 'localhost';
 $db_username = 'root';
 $db_password = '';
 $db_name = '';
 
+/* STEAM  */
+$apikeysteam = ''; /* API KEY, QUE PODE SER PEGADA AQUI: https://steamcommunity.com/dev/apikey */
+$linkdowebsite = ''; /* LINK DO WEBSITE ONDE ESTÁ INSTALADO O PAINEL */
 
-$licença = 'Esta versão é gratuita';
-$membros = $member;
-$gruposteam = 'https://steamcommunity.com/groups/TugaArmyCM'; /* COLOCA AQUI O LINK DO GRUPO DA STEAM */
-$logodacomunidade = 'http://tugaarmy.pt/assets/images/logo.png'; /* COLOCA AQUI O LINK DO LOGÓTIPO DA TUA COMUNIDADE (PNG) */
-$comunidade = $groupname;
+/* COMUNIDADE */
+$logodacomunidade = ''; /* COLOCA AQUI O LINK DO LOGÓTIPO DA TUA COMUNIDADE (PNG) */
+$websitedebans = ''; /* COLOCA AQUI O LINK DO WEBSITE DE BANIMENTOS */
+$discord = 'https://discord.gg/'; /* LINK DO SERVIDOR DE DISCORD */
+$gruposteam = 'https://steamcommunity.com/groups/'; /* COLOCA AQUI O LINK DO GRUPO DA STEAM */
+$membros = $member; /* NÃO MEXER */
+$comunidade = $groupname; /* NÃO MEXER */
+
+/* CONFIGURAÇÕES EXTRA */
+$licença = 'Sem Licença'; /* NÃO MEXER */
+$linguagempredefinida = 'PT'; /* OPTIONS: PT (Portuguese), EN (English), ES (Spanish), FR (French) and RU (Russian). (Default: PT) */
+
 ?>
 ```
 
@@ -100,3 +87,4 @@ $comunidade = $groupname;
 - [Demo website](https://tugaarmy.pt/membros/)
 - [My Steam](https://steamcommunity.com/id/ShutAP1337)
 - My discord: ShutUP#4249
+- Shoutout to DikaN for helping with the code beauty and some translactions.! <3

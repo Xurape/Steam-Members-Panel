@@ -1,8 +1,8 @@
-        <div class="account-pages"></div>
+<div class="account-pages"></div>
         <div class="clearfix"></div>
         <div class="wrapper-page">
             <div class="text-center">
-                <a href="index.php" class="logo"><img src="imagens/logotipo.png" width="200" height="120"></a>
+                <a href="index.php" class="logo"><img src="<?php echo $logodacomunidade ?>" width="200" height="120"></a>
             </div>
         	<div class="m-t-40 card-box">
                 <div class="text-center">
@@ -40,18 +40,17 @@
                                 <button class="btn btn-custom btn-bordred btn-block waves-effect waves-light" type="submit">Login</button>
                             </div>
                         </div>
+                        <center><div class="form-group m-t-30 m-b-0">
+                            <div class="col-sm-12">
+                                <a href="page-recoverpw.html" class="text-muted"><i class="fa fa-lock m-r-5"></i> Esqueceste-te da password?</a>
+                        </div>
+                        </div></center>
                         <center><hr style="width: 40x;"><a style="color: white">or</a><hr style="width: 40x;"></center>
                         <div class="form-group text-center m-t-30">
                             <div class="col-xs-12">
                                 <a href="?login" class="logo"><img src="imagens/steamlogin.png"></a>
                             </div>
-                        </div>                        
-
-                        <center><div class="form-group m-t-30 m-b-0">
-                            <div class="col-sm-12">
-                                <a href="page-recoverpw.html" class="text-muted"><i class="fa fa-lock m-r-5"></i> Esqueceste-te da password?</a>
-                            </div>
-                        </div></center>
+                        </div>
                     </form>
 
                 </div>

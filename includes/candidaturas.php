@@ -21,7 +21,16 @@
                                 </div>                                
                                 <div style="padding-top: 5px; padding-right: 5px;">
                                     <a href="?l=en"><span class="flag-icon flag-icon-gb flag-icon"></span></a>
-                                </div>                                                                
+                                </div>
+                                <div style="padding-top: 5px; padding-right: 5px;">
+                                    <a href="?l=es"><span class="flag-icon flag-icon-es flag-icon"></span></a>
+                                </div>
+				<div style="padding-top: 5px; padding-right: 5px;">
+                                    <a href="?l=fr"><span class="flag-icon flag-icon-fr flag-icon"></span></a>
+                                </div>
+				 <div style="padding-top: 5px; padding-right: 5px;">
+                                    <a href="?l=ru"><span class="flag-icon flag-icon-ru flag-icon"></span></a>
+                                </div> 
                             </ul>
                         </div>
                     </div>
