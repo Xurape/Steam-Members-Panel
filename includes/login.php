@@ -49,7 +49,7 @@
 
                         <center><div class="form-group m-t-30 m-b-0">
                             <div class="col-sm-12">
-                                <a href="page-recoverpw.html" class="text-muted"><i class="fa fa-lock m-r-5"></i> Esqueceste-te da password?</a>
+                                <a href="#" class="text-muted"><i class="fa fa-lock m-r-5"></i> Esqueceste-te da password?</a>
                             </div>
                         </div></center>
                     </form>
