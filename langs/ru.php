@@ -38,8 +38,8 @@ define('CONTENT_SOON', 'КРАТКАЯ');
 
 /*
 
-          ПОЗИЦИИ
-      ПЕРЕВОД СБОРОВ
+          CARGOS
+    TRADUÇÃO DOS CARGOS
 
 */
 

@@ -1,4 +1,4 @@
-# Steam Members Panel
+# Steam Members Panel - Versão Fixed by ShutAP
 
 [EN]:
 This web panel helps your CSGO community or other type of community with a amazing variety of functions done for you.
@@ -10,8 +10,6 @@ Este painel ajuda a tua comunidade de CSGO ou outro tipo de comunidade com uma v
 
 Este painel contém 2 linguagens, português e inglês.
 
-Check all changelogs [here](https://github.com/ShutAP1337/Steam-Members-Panel/blob/master/CHANGELOG.md)
-
 # Requirements:
 - [PHP](https://php.net/) (Version 5.6.0 or newer)
 - [MySQL](https://www.mysql.com/)
@@ -21,15 +19,13 @@ Check all changelogs [here](https://github.com/ShutAP1337/Steam-Members-Panel/bl
 - Login System 
 - Language System
 - VIP Manager Page
-- Staff List Page
-- Staff Applications
+- Staff Applications (WORKING ON IT)
 - Account Manager Page (SOON)
 - Admin Page (SOON)
 - Buy VIP w/ Auto Activation (SOON)
 - Gift VIP w/ Auto Activation (SOON)
 - Discord Integration (SOON)
 - MySQL Support
-- [DeckPanel](https://deckhost.pt/cart.php?a=confproduct&i=0) Support
 
 # Some Screenshots of the panel
 ## Login Page
@@ -73,7 +69,7 @@ Config.php
 include '../langs/lang.php'; /* LOCALIZAÇÃO DAS TRADUÇÕES (PT & EN) */
 
 /* SCRIPT XML STEAM */
-$url = "https://steamcommunity.com/groups/".$gruposteam."/memberslistxml/?xml=1";
+$url = "https://steamcommunity.com/groups/NOMEDACOMUNIDADE".$gruposteam."/memberslistxml/?xml=1";
 $xml = simplexml_load_file($url);
 $avatarfull = $xml->groupDetails->avatarFull;
 $groupname = $xml->groupDetails->groupName;
@@ -90,7 +86,7 @@ $db_name = '';
 
 $licença = 'Esta versão é gratuita';
 $membros = $member;
-$gruposteam = 'https://steamcommunity.com/groups/TugaArmyCM'; /* COLOCA AQUI O LINK DO GRUPO DA STEAM */
+$gruposteam = 'https://steamcommunity.com/groups/NOMEDACOMUNIDADE'; /* COLOCA AQUI O LINK DO GRUPO DA STEAM */
 $logodacomunidade = 'http://tugaarmy.pt/assets/images/logo.png'; /* COLOCA AQUI O LINK DO LOGÓTIPO DA TUA COMUNIDADE (PNG) */
 $comunidade = $groupname;
 ?>
