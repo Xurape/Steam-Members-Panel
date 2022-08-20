@@ -1,4 +1,7 @@
-# Steam Members Panel - Versão Fixed by ShutAP
+-----------------------------------------------------------------------------------------------------------
+# NOTE:
+## New panel with more functions and a modern designed Admin dashboard available at https://reduxpanel.com
+-----------------------------------------------------------------------------------------------------------
 
 [EN]:
 This web panel helps your CSGO community or other type of community with a amazing variety of functions done for you.
