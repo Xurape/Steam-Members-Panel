@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------------------------------
 # NOTE:
-## New panel with more functions and a modern designed Admin dashboard available at https://reduxpanel.com
+## This project as been archived. A new panel with more functions and a modern designed Admin dashboard available at https://reduxpanel.com
 -----------------------------------------------------------------------------------------------------------
 
 [EN]:
